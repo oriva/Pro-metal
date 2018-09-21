@@ -26,3 +26,6 @@ $('.scroll-weed-everyday').click(function (event) {
         scrollTop: top
     }, 1000);
 });
+$('form').on('submit', function(){
+    
+});
