@@ -47,12 +47,13 @@ $('.success .closed').click(function(){
 
 $('.mebel-form__main').on('submit', function(e){
     e.preventDefault();
-    $(this).trigger('reset');
     var data_info = $(this).serialize();
     var phone = $(this).find('.input--tel');
     if (phone.val().length != 16) {
         alert('Введите номер телефона полностью');
+        return false;
     } else {
+        $(this).trigger('reset');
         $.ajax({
             type: "POST", //Метод отправки
             url: "/forms/sendmebel.php", //путь до php фаила отправителя

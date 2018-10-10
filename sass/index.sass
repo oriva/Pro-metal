@@ -127,6 +127,7 @@ ul, li, ol
   .vert-margin
     margin-top: auto
     margin-bottom: auto
+    padding: 0 5px
   a
     display: block
     img
@@ -141,6 +142,16 @@ ul, li, ol
   .icon
     width: 13px
     margin-right: 6px
+  .icon-sn
+    height: 16px
+    display: block
+    text-align: center
+    a
+      display: inline-block
+    img
+      display: block
+      height: 100%
+      margin: 5px
   .phone
     font-weight: bold
     font-size: 16px
@@ -161,11 +172,18 @@ ul, li, ol
     text-transform: uppercase
     font-size: 1.1em
     line-height: 1.8em
+    span
+      display: block
+      font-size: 1em
+      margin: 6px 0
   button
     display: block
     padding: 10px 20px
     margin-left: auto
     margin-top: 20px
+    &:hover
+      color: #000
+      background-color: #fff
   .vector
     display: block
     margin: auto
@@ -218,7 +236,8 @@ ul, li, ol
     font-size: 2em
     text-transform: uppercase
     margin-top: 30px
-
+    a
+      color: #000
 .about
   padding: 60px 0
   iframe, img
@@ -233,12 +252,18 @@ ul, li, ol
 
 .first-callback
   position: relative
+  z-index: 3
   background-color: #FBE116
   &__man
+    overflow: hidden
+    display: block
     position: absolute
     bottom: 0
     right: 0
     height: 110%
+    img
+      margin-left: auto
+      display: block
   h2
     text-align: left
     margin: 60px 0 20px
@@ -260,6 +285,8 @@ ul, li, ol
         color: #000
 
 .instagram
+  position: relative
+  z-index: 10
   padding: 60px 0
   h2
     margin-bottom: 60px
@@ -272,6 +299,7 @@ ul, li, ol
   &__link
     display: block
     width: 100%
+    margin-bottom: 30px
     @include transition(.3s)
     &:hover
       opacity: .8
@@ -283,7 +311,8 @@ ul, li, ol
     margin-top: 30px
     font-size: 18px
     a
-      color: #000
+      color: #7AA
+      font-weight: bold
       @include transition(.3s)
       &:hover
         color: #1A52D3
@@ -584,13 +613,26 @@ ul, li, ol
   &__icon
     margin: 10px 10px 8px
     width: 16px
+  a.map__snet
+    width: 16px
+    margin: 10px 5px 8px
+    @include transition(.3s)
+    img
+      display: block
+      width: 100%
+    &:nth-child(1)
+      margin-left: 10px
+    &:nth-child(3)
+      margin-right: 10px
+    &:hover
+      @include transform(scale(.9))
   &__ya
     padding: 0
     height: 400px
   &__logo
     display: block
     width: 70%
-    margin: 0 auto 60px
+    margin: 0 auto 40px
 .footer
   width: 100%
   padding: 120px 0 40px

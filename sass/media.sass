@@ -25,7 +25,7 @@
     font-size: 0.9em
 
   h1
-    font-size: 3.5em
+    font-size: 3em
 
   h2
     font-size: 46px
@@ -43,6 +43,15 @@
       font-size: 16px
     .mail
       font-size: 10.2px
+    .vert-margin
+      margin-top: auto
+      margin-bottom: auto
+      padding: 0 5px
+    .phone
+      font-size: 14px
+
+  .block-1 p span
+    font-size: .8em
 
   .about
     p
@@ -143,6 +152,7 @@
 
   .group
     margin-bottom: 0
+    width: 100%
     input:focus-within ~ label, input:not(:placeholder-shown) ~ label
       top: 3px
 
@@ -155,7 +165,7 @@
   .block-1
     background-position: top left
     p
-      text-align: center
+      font-size: .9em
     button
       margin-right: auto
       margin-top: 90px
@@ -171,14 +181,17 @@
     label
       font-size: .9em
       font-family: 'Proxima Nova Rg'
+      a
+        color: #000
+        font-size: 1em
     .button
       border-radius: 0
       display: block
       text-align: center
     .button-desktop
-      display: block
-    .button-mobile
       display: none
+    .button-mobile
+      display: block
 
   .about
     iframe
@@ -195,8 +208,6 @@
     &__span
       font-size: 12px
       text-align: center
-    .group
-      width: 100%
     .political_par
       font-size: .9em
     button
@@ -225,6 +236,7 @@
         font-family: 'Proxima Nova Rg'
       button
         margin: 10px 0
+        width: 100%
       .political_par
         font-size: .6em
 
@@ -282,6 +294,8 @@
       &.price
         text-align: left
         font-size: .7em
+        label
+          font-size: 1em
     button
       margin-left: 0
       margin-bottom: 25px
