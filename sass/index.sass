@@ -73,7 +73,7 @@ h1
   font-style: italic
   text-align: right
   text-transform: uppercase
-  font-size: 4em
+  font-size: 3em
   line-height: 1.15
   margin-bottom: 15px
 
@@ -516,6 +516,21 @@ ul, li, ol
       label
         vertical-align: middle
         font-size: 1.3em
+  &__select
+    text-align: center
+    padding: 10px 0 0
+    img
+      display: inline-block
+      position: relative
+      width: 20%
+      opacity: .6
+      margin: 0 0.5% -.36em
+      cursor: pointer
+      letter-spacing: 1em
+      &.selected
+        opacity: 1
+      &:hover
+        opacity: 1
   .arrow
     display: inline-block
     vertical-align: middle
@@ -648,6 +663,9 @@ ul, li, ol
     width: 50%
     img
       width: 100%
+      max-width: 150px
+      display: block
+      margin: auto
   a
     @include transition(.3s)
     &:hover
